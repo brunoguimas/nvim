@@ -10,11 +10,12 @@ return {
     local dashboard = require("alpha.themes.dashboard")
 
     dashboard.section.buttons.val = {
-      dashboard.button("SPC e", "  > New file"),
-      dashboard.button("SPC f f", "  > Find file"),
-      dashboard.button("SPC f r", "  > Recent"),
-      dashboard.button("s", "  > Settings", ":NvimTreeOpen ~/.config/nvim<CR>"),
-      dashboard.button("q", "󰗼  > Quit", ":qa<CR>"),
+      dashboard.button('n', "  > New file", '<CMD>enew<CR>'),
+      dashboard.button('s', "󰑓  > Restore session", '<CMD>SessionRestore<CR>'),
+      dashboard.button('f', "  > Find file", '<CMD>SessionRestore<CR>'),
+      dashboard.button('r', "  > Recent", '<CMD>Telescope oldfiles<CR>'),
+      dashboard.button('c', "  > Config", '<CMD>Telescope find_files search_dirs=~/.config/nvim<CR>'),
+      dashboard.button('q', "󰗼  > Quit", '<CMD>qa<CR>'),
     }
 
     local function footer()

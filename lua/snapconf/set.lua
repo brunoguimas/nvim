@@ -1,8 +1,8 @@
 local opt = vim.opt
 
-opt.tabstop = 2
-opt.softtabstop = 2
-opt.shiftwidth = 2
+opt.tabstop = 4
+opt.softtabstop = 4
+opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 opt.smartindent = true
@@ -30,5 +30,6 @@ opt.termguicolors = true
 
 opt.showmode = false
 
+vim.opt.fillchars:append({ eob = " " })
 -- No automatic comment insertion
 vim.cmd([[autocmd FileType * set formatoptions-=ro]])

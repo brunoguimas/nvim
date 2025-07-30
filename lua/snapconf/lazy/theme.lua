@@ -1,7 +1,8 @@
 return {
-  "VDuchauffour/neodark.nvim",
+  "AstroNvim/astrotheme",
 
   config = function()
-    vim.cmd.colorscheme('neodarker')
+    require('astrotheme').setup({})
+    vim.cmd([[colorscheme astrodark]])
   end,
 }
