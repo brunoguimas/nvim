@@ -7,8 +7,8 @@ return {
     local builtin = require('telescope.builtin')
     local map = vim.keymap.set
 
-    map('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
-    map('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+    map('n', '<leader>ff',  '<CMD>Telescope find_files search_dirs=./<CR>', { desc = 'Telescope find files' })
+    map('n', '<leader>fg',  '<CMD>Telescope live_grep search_dirs=./<CR>', { desc = 'Telescope live grep' })
     map('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
     map('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
     map('n', '<leader>fr', builtin.oldfiles, { desc = 'Telescope find recent' })

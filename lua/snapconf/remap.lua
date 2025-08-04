@@ -1,7 +1,7 @@
 local map = vim.keymap.set
 
 -- Basic commands
-map('n', '<leader>o', '<CMD>wqa<CR>', { desc = "Quit and save" })
+map('n', '<leader>o', '<CMD>wqa<CR>', { desc = "Save and quit" })
 map('n', '<leader>q', '<CMD>qa<CR>', { desc = "Quit" })
 map('n', '<leader>w', '<CMD>w<CR>', { desc = "Write" })
 map('n', '<leader>n', '<CMD>enew<CR>', { desc = "Create new file" })
@@ -33,4 +33,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 })
 
 -- Disable the fucking annoying command history bind
-map('n', 'q<CMD>', '<nop')
+map('n', 'q:', '<nop>')
