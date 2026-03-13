@@ -1,0 +1,5 @@
+My Neovim config
+
+A really minimal config. Focused on Golang dev.
+Also has some configs for C and rust, besides some configs for tools like Makefiles and SQL.
+Made for productivity and fast code writing.
